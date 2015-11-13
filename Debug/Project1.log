@@ -1,0 +1,17 @@
+﻿Build started 2015-11-12 4:38:38 PM.
+     1>Project "c:\Users\Jacob\Documents\Visual Studio 2015\Projects\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Player.cpp Room.cpp
+         Room.cpp
+     1>c:\users\jacob\documents\visual studio 2015\projects\project1\project1\room.hpp(15): error C2555: 'Room::Clone': overriding virtual function return type differs and is not covariant from 'GameEntity::Clone'
+         c:\users\jacob\documents\visual studio 2015\projects\project1\project1\gameentity.hpp(19): note: see declaration of 'GameEntity::Clone'
+     1>c:\users\jacob\documents\visual studio 2015\projects\project1\project1\room.cpp(13): error C2061: syntax error: identifier 'Player'
+         Player.cpp
+     1>c:\users\jacob\documents\visual studio 2015\projects\project1\project1\player.hpp(15): error C2555: 'Player::Clone': overriding virtual function return type differs and is not covariant from 'GameEntity::Clone'
+         c:\users\jacob\documents\visual studio 2015\projects\project1\project1\gameentity.hpp(19): note: see declaration of 'GameEntity::Clone'
+         Generating Code...
+     1>Done Building Project "c:\Users\Jacob\Documents\Visual Studio 2015\Projects\Project1\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.16
