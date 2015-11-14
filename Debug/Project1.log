@@ -1,17 +1,19 @@
-﻿Build started 2015-11-12 4:38:38 PM.
-     1>Project "c:\Users\Jacob\Documents\Visual Studio 2015\Projects\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2015-11-14 2:09:14 PM.
+     1>Project "C:\Users\Jacob\Documents\GitHub\seng330ass2\Project1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Player.cpp Room.cpp
-         Room.cpp
-     1>c:\users\jacob\documents\visual studio 2015\projects\project1\project1\room.hpp(15): error C2555: 'Room::Clone': overriding virtual function return type differs and is not covariant from 'GameEntity::Clone'
-         c:\users\jacob\documents\visual studio 2015\projects\project1\project1\gameentity.hpp(19): note: see declaration of 'GameEntity::Clone'
-     1>c:\users\jacob\documents\visual studio 2015\projects\project1\project1\room.cpp(13): error C2061: syntax error: identifier 'Player'
-         Player.cpp
-     1>c:\users\jacob\documents\visual studio 2015\projects\project1\project1\player.hpp(15): error C2555: 'Player::Clone': overriding virtual function return type differs and is not covariant from 'GameEntity::Clone'
-         c:\users\jacob\documents\visual studio 2015\projects\project1\project1\gameentity.hpp(19): note: see declaration of 'GameEntity::Clone'
-         Generating Code...
-     1>Done Building Project "c:\Users\Jacob\Documents\Visual Studio 2015\Projects\Project1\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\jacob\documents\github\seng330ass2\main.cpp(28): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\jacob\documents\github\seng330ass2\main.cpp(30): warning C4018: '<': signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\Project1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\Project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\Project1.lib" /MACHINE:X86 Debug\Factory.obj
+         Debug\GameEntity.obj
+         Debug\Main.obj
+         Debug\Player.obj
+         Debug\Room.obj
+         Project1.vcxproj -> C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\Project1.exe
+     1>Done Building Project "C:\Users\Jacob\Documents\GitHub\seng330ass2\Project1.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.16
+Time Elapsed 00:00:01.10

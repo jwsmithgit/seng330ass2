@@ -1,1 +1,9 @@
-CMake
+Tools Needed:
+- Visual Studio
+
+How to Build:
+- Open .vcxproj file with Visual Studio
+- Build the program in Visual Studio with ctrl+shift+b
+
+How to Run:
+- Run the program in Visual Studio with ctrl+f5
