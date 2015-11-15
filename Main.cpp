@@ -1,11 +1,15 @@
 // my first program in C++
 #include "GameEntity.h"
 #include "Factory.h"
+
 #include <iostream>
 #include <vector>
 
-int main()
-{
+#include "GameEntity.pb.h"
+#include <fstream>
+
+int main(int argc, char* argv[]){
+
 	std::vector<GameEntity*> entities;
 	int choice;
 	std::string name;
@@ -27,6 +31,9 @@ int main()
 
 	for (int i = 0; i < entities.size(); ++i)
 		entities[i]->PrintName();
+	std::fstream output("myfile", std::ios::out | std::ios::binary);
+	//for (int i = 0; i < entities.size(); ++i)
+		//entities[i]->SerializeToOstream(&output);
 	for (int i = 0; i < entities.size(); ++i)
 		delete entities[i];
 
