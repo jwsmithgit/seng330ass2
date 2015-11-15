@@ -31,18 +31,18 @@ void  protobuf_AddDesc_GameEntity_2eproto();
 void protobuf_AssignDesc_GameEntity_2eproto();
 void protobuf_ShutdownFile_GameEntity_2eproto();
 
-class Person;
+class GameEntity;
 
 // ===================================================================
 
-class Person : public ::google::protobuf::Message {
+class GameEntity : public ::google::protobuf::Message {
  public:
-  Person();
-  virtual ~Person();
+  GameEntity();
+  virtual ~GameEntity();
 
-  Person(const Person& from);
+  GameEntity(const GameEntity& from);
 
-  inline Person& operator=(const Person& from) {
+  inline GameEntity& operator=(const GameEntity& from) {
     CopyFrom(from);
     return *this;
   }
@@ -56,17 +56,17 @@ class Person : public ::google::protobuf::Message {
   }
 
   static const ::google::protobuf::Descriptor* descriptor();
-  static const Person& default_instance();
+  static const GameEntity& default_instance();
 
-  void Swap(Person* other);
+  void Swap(GameEntity* other);
 
   // implements Message ----------------------------------------------
 
-  Person* New() const;
+  GameEntity* New() const;
   void CopyFrom(const ::google::protobuf::Message& from);
   void MergeFrom(const ::google::protobuf::Message& from);
-  void CopyFrom(const Person& from);
-  void MergeFrom(const Person& from);
+  void CopyFrom(const GameEntity& from);
+  void MergeFrom(const GameEntity& from);
   void Clear();
   bool IsInitialized() const;
 
@@ -119,7 +119,7 @@ class Person : public ::google::protobuf::Message {
   inline ::std::string* release_description();
   inline void set_allocated_description(::std::string* description);
 
-  // @@protoc_insertion_point(class_scope:Person)
+  // @@protoc_insertion_point(class_scope:GameEntity)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -140,92 +140,92 @@ class Person : public ::google::protobuf::Message {
   friend void protobuf_ShutdownFile_GameEntity_2eproto();
 
   void InitAsDefaultInstance();
-  static Person* default_instance_;
+  static GameEntity* default_instance_;
 };
 // ===================================================================
 
 
 // ===================================================================
 
-// Person
+// GameEntity
 
 // required int32 id = 1;
-inline bool Person::has_id() const {
+inline bool GameEntity::has_id() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void Person::set_has_id() {
+inline void GameEntity::set_has_id() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void Person::clear_has_id() {
+inline void GameEntity::clear_has_id() {
   _has_bits_[0] &= ~0x00000001u;
 }
-inline void Person::clear_id() {
+inline void GameEntity::clear_id() {
   id_ = 0;
   clear_has_id();
 }
-inline ::google::protobuf::int32 Person::id() const {
-  // @@protoc_insertion_point(field_get:Person.id)
+inline ::google::protobuf::int32 GameEntity::id() const {
+  // @@protoc_insertion_point(field_get:GameEntity.id)
   return id_;
 }
-inline void Person::set_id(::google::protobuf::int32 value) {
+inline void GameEntity::set_id(::google::protobuf::int32 value) {
   set_has_id();
   id_ = value;
-  // @@protoc_insertion_point(field_set:Person.id)
+  // @@protoc_insertion_point(field_set:GameEntity.id)
 }
 
 // required string name = 2;
-inline bool Person::has_name() const {
+inline bool GameEntity::has_name() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void Person::set_has_name() {
+inline void GameEntity::set_has_name() {
   _has_bits_[0] |= 0x00000002u;
 }
-inline void Person::clear_has_name() {
+inline void GameEntity::clear_has_name() {
   _has_bits_[0] &= ~0x00000002u;
 }
-inline void Person::clear_name() {
+inline void GameEntity::clear_name() {
   if (name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     name_->clear();
   }
   clear_has_name();
 }
-inline const ::std::string& Person::name() const {
-  // @@protoc_insertion_point(field_get:Person.name)
+inline const ::std::string& GameEntity::name() const {
+  // @@protoc_insertion_point(field_get:GameEntity.name)
   return *name_;
 }
-inline void Person::set_name(const ::std::string& value) {
+inline void GameEntity::set_name(const ::std::string& value) {
   set_has_name();
   if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     name_ = new ::std::string;
   }
   name_->assign(value);
-  // @@protoc_insertion_point(field_set:Person.name)
+  // @@protoc_insertion_point(field_set:GameEntity.name)
 }
-inline void Person::set_name(const char* value) {
+inline void GameEntity::set_name(const char* value) {
   set_has_name();
   if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     name_ = new ::std::string;
   }
   name_->assign(value);
-  // @@protoc_insertion_point(field_set_char:Person.name)
+  // @@protoc_insertion_point(field_set_char:GameEntity.name)
 }
-inline void Person::set_name(const char* value, size_t size) {
+inline void GameEntity::set_name(const char* value, size_t size) {
   set_has_name();
   if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     name_ = new ::std::string;
   }
   name_->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:Person.name)
+  // @@protoc_insertion_point(field_set_pointer:GameEntity.name)
 }
-inline ::std::string* Person::mutable_name() {
+inline ::std::string* GameEntity::mutable_name() {
   set_has_name();
   if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     name_ = new ::std::string;
   }
-  // @@protoc_insertion_point(field_mutable:Person.name)
+  // @@protoc_insertion_point(field_mutable:GameEntity.name)
   return name_;
 }
-inline ::std::string* Person::release_name() {
+inline ::std::string* GameEntity::release_name() {
   clear_has_name();
   if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     return NULL;
@@ -235,7 +235,7 @@ inline ::std::string* Person::release_name() {
     return temp;
   }
 }
-inline void Person::set_allocated_name(::std::string* name) {
+inline void GameEntity::set_allocated_name(::std::string* name) {
   if (name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     delete name_;
   }
@@ -246,62 +246,62 @@ inline void Person::set_allocated_name(::std::string* name) {
     clear_has_name();
     name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
-  // @@protoc_insertion_point(field_set_allocated:Person.name)
+  // @@protoc_insertion_point(field_set_allocated:GameEntity.name)
 }
 
 // optional string description = 3;
-inline bool Person::has_description() const {
+inline bool GameEntity::has_description() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
-inline void Person::set_has_description() {
+inline void GameEntity::set_has_description() {
   _has_bits_[0] |= 0x00000004u;
 }
-inline void Person::clear_has_description() {
+inline void GameEntity::clear_has_description() {
   _has_bits_[0] &= ~0x00000004u;
 }
-inline void Person::clear_description() {
+inline void GameEntity::clear_description() {
   if (description_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     description_->clear();
   }
   clear_has_description();
 }
-inline const ::std::string& Person::description() const {
-  // @@protoc_insertion_point(field_get:Person.description)
+inline const ::std::string& GameEntity::description() const {
+  // @@protoc_insertion_point(field_get:GameEntity.description)
   return *description_;
 }
-inline void Person::set_description(const ::std::string& value) {
+inline void GameEntity::set_description(const ::std::string& value) {
   set_has_description();
   if (description_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     description_ = new ::std::string;
   }
   description_->assign(value);
-  // @@protoc_insertion_point(field_set:Person.description)
+  // @@protoc_insertion_point(field_set:GameEntity.description)
 }
-inline void Person::set_description(const char* value) {
+inline void GameEntity::set_description(const char* value) {
   set_has_description();
   if (description_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     description_ = new ::std::string;
   }
   description_->assign(value);
-  // @@protoc_insertion_point(field_set_char:Person.description)
+  // @@protoc_insertion_point(field_set_char:GameEntity.description)
 }
-inline void Person::set_description(const char* value, size_t size) {
+inline void GameEntity::set_description(const char* value, size_t size) {
   set_has_description();
   if (description_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     description_ = new ::std::string;
   }
   description_->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:Person.description)
+  // @@protoc_insertion_point(field_set_pointer:GameEntity.description)
 }
-inline ::std::string* Person::mutable_description() {
+inline ::std::string* GameEntity::mutable_description() {
   set_has_description();
   if (description_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     description_ = new ::std::string;
   }
-  // @@protoc_insertion_point(field_mutable:Person.description)
+  // @@protoc_insertion_point(field_mutable:GameEntity.description)
   return description_;
 }
-inline ::std::string* Person::release_description() {
+inline ::std::string* GameEntity::release_description() {
   clear_has_description();
   if (description_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     return NULL;
@@ -311,7 +311,7 @@ inline ::std::string* Person::release_description() {
     return temp;
   }
 }
-inline void Person::set_allocated_description(::std::string* description) {
+inline void GameEntity::set_allocated_description(::std::string* description) {
   if (description_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     delete description_;
   }
@@ -322,7 +322,7 @@ inline void Person::set_allocated_description(::std::string* description) {
     clear_has_description();
     description_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
-  // @@protoc_insertion_point(field_set_allocated:Person.description)
+  // @@protoc_insertion_point(field_set_allocated:GameEntity.description)
 }
 
 

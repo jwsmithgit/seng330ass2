@@ -18,9 +18,9 @@
 
 namespace {
 
-const ::google::protobuf::Descriptor* Person_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* GameEntity_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
-  Person_reflection_ = NULL;
+  GameEntity_reflection_ = NULL;
 
 }  // namespace
 
@@ -31,23 +31,23 @@ void protobuf_AssignDesc_GameEntity_2eproto() {
     ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
       "GameEntity.proto");
   GOOGLE_CHECK(file != NULL);
-  Person_descriptor_ = file->message_type(0);
-  static const int Person_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Person, id_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Person, name_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Person, description_),
+  GameEntity_descriptor_ = file->message_type(0);
+  static const int GameEntity_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GameEntity, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GameEntity, name_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GameEntity, description_),
   };
-  Person_reflection_ =
+  GameEntity_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
-      Person_descriptor_,
-      Person::default_instance_,
-      Person_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Person, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Person, _unknown_fields_),
+      GameEntity_descriptor_,
+      GameEntity::default_instance_,
+      GameEntity_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GameEntity, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GameEntity, _unknown_fields_),
       -1,
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Person));
+      sizeof(GameEntity));
 }
 
 namespace {
@@ -61,14 +61,14 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Person_descriptor_, &Person::default_instance());
+    GameEntity_descriptor_, &GameEntity::default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_GameEntity_2eproto() {
-  delete Person::default_instance_;
-  delete Person_reflection_;
+  delete GameEntity::default_instance_;
+  delete GameEntity_reflection_;
 }
 
 void protobuf_AddDesc_GameEntity_2eproto() {
@@ -78,12 +78,12 @@ void protobuf_AddDesc_GameEntity_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\020GameEntity.proto\"7\n\006Person\022\n\n\002id\030\001 \002(\005"
-    "\022\014\n\004name\030\002 \002(\t\022\023\n\013description\030\003 \001(\t", 75);
+    "\n\020GameEntity.proto\";\n\nGameEntity\022\n\n\002id\030\001"
+    " \002(\005\022\014\n\004name\030\002 \002(\t\022\023\n\013description\030\003 \001(\t", 79);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "GameEntity.proto", &protobuf_RegisterTypes);
-  Person::default_instance_ = new Person();
-  Person::default_instance_->InitAsDefaultInstance();
+  GameEntity::default_instance_ = new GameEntity();
+  GameEntity::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_GameEntity_2eproto);
 }
 
@@ -97,28 +97,28 @@ struct StaticDescriptorInitializer_GameEntity_2eproto {
 // ===================================================================
 
 #ifndef _MSC_VER
-const int Person::kIdFieldNumber;
-const int Person::kNameFieldNumber;
-const int Person::kDescriptionFieldNumber;
+const int GameEntity::kIdFieldNumber;
+const int GameEntity::kNameFieldNumber;
+const int GameEntity::kDescriptionFieldNumber;
 #endif  // !_MSC_VER
 
-Person::Person()
+GameEntity::GameEntity()
   : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Person)
+  // @@protoc_insertion_point(constructor:GameEntity)
 }
 
-void Person::InitAsDefaultInstance() {
+void GameEntity::InitAsDefaultInstance() {
 }
 
-Person::Person(const Person& from)
+GameEntity::GameEntity(const GameEntity& from)
   : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:Person)
+  // @@protoc_insertion_point(copy_constructor:GameEntity)
 }
 
-void Person::SharedCtor() {
+void GameEntity::SharedCtor() {
   ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   id_ = 0;
@@ -127,12 +127,12 @@ void Person::SharedCtor() {
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
-Person::~Person() {
-  // @@protoc_insertion_point(destructor:Person)
+GameEntity::~GameEntity() {
+  // @@protoc_insertion_point(destructor:GameEntity)
   SharedDtor();
 }
 
-void Person::SharedDtor() {
+void GameEntity::SharedDtor() {
   if (name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
     delete name_;
   }
@@ -143,28 +143,28 @@ void Person::SharedDtor() {
   }
 }
 
-void Person::SetCachedSize(int size) const {
+void GameEntity::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
-const ::google::protobuf::Descriptor* Person::descriptor() {
+const ::google::protobuf::Descriptor* GameEntity::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return Person_descriptor_;
+  return GameEntity_descriptor_;
 }
 
-const Person& Person::default_instance() {
+const GameEntity& GameEntity::default_instance() {
   if (default_instance_ == NULL) protobuf_AddDesc_GameEntity_2eproto();
   return *default_instance_;
 }
 
-Person* Person::default_instance_ = NULL;
+GameEntity* GameEntity::default_instance_ = NULL;
 
-Person* Person::New() const {
-  return new Person;
+GameEntity* GameEntity::New() const {
+  return new GameEntity;
 }
 
-void Person::Clear() {
+void GameEntity::Clear() {
   if (_has_bits_[0 / 32] & 7) {
     id_ = 0;
     if (has_name()) {
@@ -182,11 +182,11 @@ void Person::Clear() {
   mutable_unknown_fields()->Clear();
 }
 
-bool Person::MergePartialFromCodedStream(
+bool GameEntity::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Person)
+  // @@protoc_insertion_point(parse_start:GameEntity)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
@@ -254,17 +254,17 @@ bool Person::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:Person)
+  // @@protoc_insertion_point(parse_success:GameEntity)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:Person)
+  // @@protoc_insertion_point(parse_failure:GameEntity)
   return false;
 #undef DO_
 }
 
-void Person::SerializeWithCachedSizes(
+void GameEntity::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Person)
+  // @@protoc_insertion_point(serialize_start:GameEntity)
   // required int32 id = 1;
   if (has_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->id(), output);
@@ -294,12 +294,12 @@ void Person::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:Person)
+  // @@protoc_insertion_point(serialize_end:GameEntity)
 }
 
-::google::protobuf::uint8* Person::SerializeWithCachedSizesToArray(
+::google::protobuf::uint8* GameEntity::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Person)
+  // @@protoc_insertion_point(serialize_to_array_start:GameEntity)
   // required int32 id = 1;
   if (has_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->id(), target);
@@ -331,11 +331,11 @@ void Person::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Person)
+  // @@protoc_insertion_point(serialize_to_array_end:GameEntity)
   return target;
 }
 
-int Person::ByteSize() const {
+int GameEntity::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
@@ -372,10 +372,10 @@ int Person::ByteSize() const {
   return total_size;
 }
 
-void Person::MergeFrom(const ::google::protobuf::Message& from) {
+void GameEntity::MergeFrom(const ::google::protobuf::Message& from) {
   GOOGLE_CHECK_NE(&from, this);
-  const Person* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Person*>(
+  const GameEntity* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const GameEntity*>(
       &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
@@ -384,7 +384,7 @@ void Person::MergeFrom(const ::google::protobuf::Message& from) {
   }
 }
 
-void Person::MergeFrom(const Person& from) {
+void GameEntity::MergeFrom(const GameEntity& from) {
   GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_id()) {
@@ -400,25 +400,25 @@ void Person::MergeFrom(const Person& from) {
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
-void Person::CopyFrom(const ::google::protobuf::Message& from) {
+void GameEntity::CopyFrom(const ::google::protobuf::Message& from) {
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void Person::CopyFrom(const Person& from) {
+void GameEntity::CopyFrom(const GameEntity& from) {
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Person::IsInitialized() const {
+bool GameEntity::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
 
   return true;
 }
 
-void Person::Swap(Person* other) {
+void GameEntity::Swap(GameEntity* other) {
   if (other != this) {
     std::swap(id_, other->id_);
     std::swap(name_, other->name_);
@@ -429,11 +429,11 @@ void Person::Swap(Person* other) {
   }
 }
 
-::google::protobuf::Metadata Person::GetMetadata() const {
+::google::protobuf::Metadata GameEntity::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Person_descriptor_;
-  metadata.reflection = Person_reflection_;
+  metadata.descriptor = GameEntity_descriptor_;
+  metadata.reflection = GameEntity_reflection_;
   return metadata;
 }
 
