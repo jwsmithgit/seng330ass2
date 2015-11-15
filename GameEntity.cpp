@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+// constructors, one for each possibility of initial variables
 GameEntity::GameEntity() {
 	id_ = 0;
 	name_ = "";
@@ -26,10 +27,12 @@ GameEntity::GameEntity(int id, std::string name, std::string description) {
     std::cout << "Created an entity..." << std::endl;
 }
 
+// destructor
 GameEntity::~GameEntity() {
     std::cout << "Destroyed an entity..." << std::endl;
 }
 
+// print out information
 void GameEntity::Print() {
 	std::cout << id_ << " " << name_ << " " << description_ << std::endl;
 }
@@ -38,6 +41,7 @@ void GameEntity::PrintName() {
 	std::cout << name_ << std::endl;
 }
 
+// getters
 int GameEntity::GetId() {
     return id_;
 }
@@ -50,6 +54,7 @@ std::string GameEntity::GetDescription() {
     return description_;
 }
 
+// setters
 void GameEntity::SetId(int id) {
 	id_ = id;
 }
