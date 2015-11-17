@@ -1,0 +1,20 @@
+﻿Build started 2015-11-16 5:22:24 PM.
+     1>Project "C:\Users\Jacob\Documents\GitHub\seng330ass2\seng330ass2base\seng330ass2base.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\seng330ass2base.pdb" /Gd /TP /analyze- /errorReport:prompt Factory.cpp GameEntity.cpp Player.cpp Room.cpp
+         Room.cpp
+         Player.cpp
+         GameEntity.cpp
+         Factory.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\seng330ass2base.lib" /NOLOGO Debug\Factory.obj
+         Debug\GameEntity.obj
+         Debug\Player.obj
+         Debug\Room.obj
+         seng330ass2base.vcxproj -> C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\seng330ass2base.lib
+     1>Done Building Project "C:\Users\Jacob\Documents\GitHub\seng330ass2\seng330ass2base\seng330ass2base.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.65
