@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seng330ass2", "seng330ass2.vcxproj", "{D665B115-D6DE-4904-88DC-0409E197A4D2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seng330ass2test", "seng330ass2test\seng330ass2test.vcxproj", "{E1733E63-1FB8-4079-998C-5306139CA70C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D665B115-D6DE-4904-88DC-0409E197A4D2} = {D665B115-D6DE-4904-88DC-0409E197A4D2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seng330ass2base", "seng330ass2base\seng330ass2base.vcxproj", "{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seng330ass2run", "seng330ass2run\seng330ass2run.vcxproj", "{D665B115-D6DE-4904-88DC-0409E197A4D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +20,22 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Debug|x64.ActiveCfg = Debug|x64
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Debug|x64.Build.0 = Debug|x64
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Debug|x86.Build.0 = Debug|Win32
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Release|x64.ActiveCfg = Release|x64
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Release|x64.Build.0 = Release|x64
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Release|x86.ActiveCfg = Release|Win32
+		{E1733E63-1FB8-4079-998C-5306139CA70C}.Release|x86.Build.0 = Release|Win32
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Debug|x64.ActiveCfg = Debug|x64
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Debug|x64.Build.0 = Debug|x64
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Debug|x86.Build.0 = Debug|Win32
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Release|x64.ActiveCfg = Release|x64
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Release|x64.Build.0 = Release|x64
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Release|x86.ActiveCfg = Release|Win32
+		{75BF4EC2-7AB3-4D8D-AE99-FEAE7C41A1BC}.Release|x86.Build.0 = Release|Win32
 		{D665B115-D6DE-4904-88DC-0409E197A4D2}.Debug|x64.ActiveCfg = Debug|x64
 		{D665B115-D6DE-4904-88DC-0409E197A4D2}.Debug|x64.Build.0 = Debug|x64
 		{D665B115-D6DE-4904-88DC-0409E197A4D2}.Debug|x86.ActiveCfg = Debug|Win32
