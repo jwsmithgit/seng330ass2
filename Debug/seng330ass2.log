@@ -1,0 +1,24 @@
+﻿Build started 2015-11-15 2:20:54 PM.
+     1>Project "C:\Users\Jacob\Documents\GitHub\seng330ass2\seng330ass2.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj, prototype.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\Jacob\Documents\GitHub\seng330ass2\ /ZI /nologo /W2 /WX- /sdl /Od /Oy- /D _MBCS /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Factory.cpp GameEntity.cpp Main.cpp Player.cpp Room.cpp
+         Factory.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Room.cpp
+         Player.cpp
+         Main.cpp
+         GameEntity.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\seng330ass2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\seng330ass2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\seng330ass2.lib" /MACHINE:X86 Debug\Factory.obj
+         Debug\GameEntity.obj
+         Debug\Main.obj
+         Debug\Player.obj
+         Debug\Room.obj
+         seng330ass2.vcxproj -> C:\Users\Jacob\Documents\GitHub\seng330ass2\Debug\seng330ass2.exe
+     1>Done Building Project "C:\Users\Jacob\Documents\GitHub\seng330ass2\seng330ass2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.37
